@@ -49,7 +49,7 @@ class SyntaxInputHandler(sublime_plugin.ListInputHandler):
 
         result = []
         for syntax in sorted(sublime.list_syntaxes(), key=lambda e: e.name):
-            path = pathlib.Path(syntax.path)
+            path = pathlib.PurePosixPath(syntax.path)
             package = path.parts[1]
 
             if not show_hidden and syntax.hidden:
