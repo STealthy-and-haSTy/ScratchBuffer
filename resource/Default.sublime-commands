@@ -1,0 +1,18 @@
+[
+    // Examples of commonly used syntaxes for scratch buffers.
+    { "caption": "Scratch Buffer: Plain Text",        "command": "scratch_buffer", "args": {"syntax": "Packages/Text/Plain text.tmLanguage"}},
+    { "caption": "Scratch Buffer: HTML",              "command": "scratch_buffer", "args": {"syntax": "Packages/HTML/HTML.sublime-syntax"}},
+    { "caption": "Scratch Buffer: CSS",               "command": "scratch_buffer", "args": {"syntax": "Packages/CSS/CSS.sublime-syntax"}},
+    { "caption": "Scratch Buffer: JavaScript",        "command": "scratch_buffer", "args": {"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"}},
+    { "caption": "Scratch Buffer: JSON",              "command": "scratch_buffer", "args": {"syntax": "Packages/JSON/JSON.sublime-syntax"}},
+    { "caption": "Scratch Buffer: Markdown",          "command": "scratch_buffer", "args": {"syntax": "Packages/Markdown/Markdown.sublime-syntax"}},
+    { "caption": "Scratch Buffer: Python",            "command": "scratch_buffer", "args": {"syntax": "Packages/Python/Python.sublime-syntax"}},
+
+    // When no syntax is provided, you are prompted for the syntax to use.
+    { "caption": "Scratch Buffer: Prompt for Syntax", "command": "scratch_buffer" },
+
+    // Standard options for being able to editing the package settings and
+    // open the Readme file
+    { "caption": "Preferences: ScratchBuffer", "command": "edit_settings", "args": {"base_file": "${packages}/ScratchBuffer/ScratchBuffer.sublime-settings", "default": "{\n\t$0\n}\n"} },
+    { "caption": "ScratchBuffer: Open Readme", "command": "open_file", "args": {"file": "${packages}/ScratchBuffer/README.md"} },
+]

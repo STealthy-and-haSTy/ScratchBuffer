@@ -1,0 +1,7 @@
+{
+    // When this is turned on, syntaxes which are marked as hidden by the syntax
+    // author will be offered when prompting you for a syntax; setting it to
+    // false will hide those syntaxes, mimicing the list of sytnaxes you see in
+    // the Sublime menus.
+    "show_hidden_syntaxes": false,
+}

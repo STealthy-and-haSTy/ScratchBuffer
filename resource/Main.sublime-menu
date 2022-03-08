@@ -1,0 +1,30 @@
+[
+  { "id": "preferences",
+    "children": [
+      { "caption": "Package Settings",
+        "mnemonic": "P",
+        "id": "package-settings",
+        "children": [
+          { "caption": "ScratchBuffer",
+            "children": [
+              { "caption": "README",
+                "command": "open_file",
+                "args": {
+                  "file": "${packages}/ScratchBuffer/README.md"
+                }
+              },
+              { "caption": "-" },
+              { "caption": "Settings",
+                "command": "edit_settings",
+                "args": {
+                  "base_file": "${packages}/ScratchBuffer/ScratchBuffer.sublime-settings",
+                  "default": "{\n\t$0\n}\n"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
